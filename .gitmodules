@@ -1,0 +1,6 @@
+[submodule "deps/ads"]
+	path = deps/ads
+	url = https://github.com/marszub/iga-ads.git
+[submodule "deps/pytorch"]
+	path = deps/pytorch
+	url = https://github.com/pytorch/pytorch.git

@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.18)
+project(tumor)
+find_package(ADS 0.1.0 REQUIRED)
+find_package(Torch REQUIRED)
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
+add_executable(tumor_2d tumor_2d.cpp)
+target_link_libraries(tumor_2d PRIVATE ADS::ADS "${TORCH_LIBRARIES}")
